@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <!-- Import the Model Viewer script -->
+    <script type="module" src="https://googleapis.com"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+        }
+        model-viewer {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- First Model -->
+    <model-viewer src="Beosound-28.First-detailled-normal.glb" alt="Beosound 28 First Part" auto-rotate camera-controls shadow-intensity="1"></model-viewer>
+    
+    <!-- Middle Model -->
+    <model-viewer src="Beosound-28-Middle-bit-detailled-normal.glb" alt="Beosound 28 Middle Part" auto-rotate camera-controls shadow-intensity="1"></model-viewer>
+    
+    <!-- End Model -->
+    <model-viewer src="Beosound-28-end-bit-detailled-normal.glb" alt="Beosound 28 End Part" auto-rotate camera-controls shadow-intensity="1"></model-viewer>
+
+</body>
+</html>
